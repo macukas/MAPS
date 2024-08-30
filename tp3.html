@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+        document.write(("<br>----------------------punto 1--------------------------<br>"));
+
+        var nombre=["Juan", "María", "Lucía", "Carlos", "Ana", "Luis", "Sofía", "Miguel","Elena", "Raul"]
+        var cursos="5to 4ta"
+
+        var comp=nombre.map(nombre=> `${cursos} ${nombre}`)
+
+        document.write(comp.join("<br>"));
+        console.log(comp)
+
+        document.write(("<br>----------------------punto 2--------------------------<br>"));
+
+        var notas=[7.5, 8.0, 6.5, 9.0, 5.5, 7.0, 8.5, 6.0, 7.8, 8.2, 6.9, 7.3,2.1,6.5,4.9];
+
+        var notas2=notas.map(nota=> nota + 2.50);
+
+        document.write(notas2.join("<br>"));
+        console.log(notas2);
+
+        document.write(("<br>----------------------punto 3--------------------------<br>"));
+
+        var random = Array.from({length: 10}, () => Math.random());
+
+        var cubos = random.map(num => Math.pow(num, 3));
+
+        document.write(random.join(" - ") + "<br>");
+        console.log(random);
+        document.write(promedio.join(" - ") + "<br>");
+        console.log(promedio);
+
+        document.write(("<br>----------------------punto 4--------------------------<br>"));
+
+        var precios = [100, 250, 300, 450, 500, 120, 90, 160, 200, 350, 400, 700, 800, 150, 60];
+
+        var precios2 = precios.map(precio => precio * 1.10);
+
+        console.log(precios);
+        document.write(precios);
+        console.log(precios2);
+        document.write(preciosActualizados);
+
+    </script>
+
+</body>
+
+</html>
